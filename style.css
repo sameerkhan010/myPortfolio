@@ -684,30 +684,84 @@ button:hover {
 footer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   flex-direction: column;
   row-gap: 30px;
   background: rgb(19, 28, 28);
   border-radius: 10% 10% 0 0;
-  padding-block: 40px 60px;
-}
-.middle-footer .footer_menu {
-  display: flex;
+  padding-block: 40px 15px;
 }
 
-.footer_menu_list {
-  list-style: none;
+
+ .button{
+  display:inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  /* margin: 0 5px; */
+  margin: 0 20px;
+  overflow: hidden;
+  background:#fff;
+  border-radius: 50px;
+cursor: pointer;
+box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+transition: all 0.3s ease-out;
 }
-.footer_menu_list a {
+.button:hover{
+  width: 200px;
+}
+.button .btno{
+display: inline-block;
+height: 60px;
+width: 60px;
+text-align: center;
+/* margin-left: 22px; */
+border-radius: 50%;
+box-sizing: border-box;
+line-height: 60px;
+}
+.button:nth-child(1):hover .btno {
+  background:rgb(148, 87, 170) ;
+}
+.button:nth-child(2):hover .btno {
+  background:#8459 ;
+}
+.button:nth-child(3):hover .btno {
+  background:rgb(205, 160, 100) ;
+}
+.button:nth-child(4):hover .btno {
+  background:rgb(154, 87, 79) ;
+}
+.button .btno i{
+font-size: 30px;
+line-height: 60px;
+}
+.button:hover .btno i{
+  color: rgb(0, 0, 0);
+}
+span a{
+  font-size: xx-large;
   text-decoration: none;
-  color: var(--box-color);
-  font-size: 30px;
-  font-weight: 500;
-  margin-inline: 20px;
-  transition-duration: 1s;
+ 
 }
-.footer_menu_list a:hover {
-  color: rgb(6, 244, 244);
+.button .btno span {
+  font-size: 200px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left:10px ;
+  transition: all 0.3s ease-out;
+}
+.button:nth-child(1) span a{
+  color: rgb(106, 94, 177) ;
+}
+.button:nth-child(2) span a{
+ color: #8459 ;
+}
+.button:nth-child(3) span  a{
+  color:rgb(205, 160, 100) ;
+}
+.button:nth-child(4) span a{
+ color:rgb(154, 87, 79);
 }
 
 #icons{
@@ -955,4 +1009,43 @@ pointer-events: auto;
   #icons .icon:hover .tooltip{
     top: -40px;
     }
+    .button{
+      height: 40px;
+      width: 40px;
+      float: left;
+      margin: 0 20px;
+      overflow: hidden;
+      background:#fff;
+      border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    }
+    .button:hover{
+      width: 100px;
+    }
+    .button .btno{
+    height: 40px;
+    width: 40px;
+    line-height: 30px;
+    }
+    .button .btno i{
+      font-size: 15px;
+      line-height: 40px;
+      }
+      .button:hover .btno i{
+        color: rgb(0, 0, 0);
+      }
+      span a{
+        font-size: small;
+        text-decoration: none;
+       
+      }
+      .button .btno span {
+        font-size: 200px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left:10px ;
+        transition: all 0.3s ease-out;
+      }
 }
