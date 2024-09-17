@@ -51,7 +51,17 @@ body.dark {
 html {
   scroll-behavior: smooth;
 }
-
+/* logo */
+.nav-name img{
+border-radius: 50px;
+margin-top: 10px;
+margin-left: -6rem;
+border: 2px solid aqua;
+transition: 2s;
+}
+.nav-logo img:hover{
+  box-shadow: 0 5px 8px 1px aqua;
+}
 /* navbar */
 nav {
   position: fixed;
@@ -77,6 +87,7 @@ nav {
 .nav_menu_list {
   display: flex;
   column-gap: -30px;
+  font-size: 30px;
 }
 .nav-menu .nav_list {
   list-style: none;
@@ -459,7 +470,7 @@ i {
 }
 .skill-per.react {
   animation-delay: 0.1s;
-  width: 10%;
+  width: 20%;
 }
 
 @keyframes progress {
@@ -501,7 +512,6 @@ i {
   width: 30%;
   height: 250px;
   background: transparent;
-  /* border: 2px solid #fff; */
   border: 2px solid aqua;
   border-radius: 10px;
   box-shadow: 1px 8px 10px 2px var(--first-shadow);
@@ -556,9 +566,20 @@ i {
 .top-header h1 {
   font-size: 40px;
   transition-duration: 1s;
+  /* background: hotpink; */
+  margin-left: -7rem;
 }
 .top-header h1:hover {
   color: aqua;
+}
+.top-header h2 {
+  font-size: 40px;
+  transition-duration: 1s;
+  margin-left: -3rem;
+  
+}
+.top-header p{
+  margin-left: -6.8rem;
 }
 
 /* contact-info */
@@ -742,7 +763,7 @@ line-height: 60px;
 span a{
   font-size: xx-large;
   text-decoration: none;
- 
+  margin-left: 15px;
 }
 .button .btno span {
   font-size: 200px;
@@ -802,9 +823,6 @@ span a{
   padding: 10px 18px;
   font-size: 20px;
   color: #fff;
-
-
-  
   border-radius: 25px;
   box-shadow: 0 10px 10px rgba(0,0,0,0.1); 
   opacity: 0;
@@ -860,6 +878,10 @@ pointer-events: auto;
 .bottom-footer a{
   color: #fff;
 }
+.tooltip {
+  color: black;
+}
+
 /* media query = 1024 */
 
 @media only screen and (max-width: 1024px) {
@@ -871,8 +893,15 @@ pointer-events: auto;
     width: 320px;
     height: 320px;
   }
-}
+  .image img {
+    width: 360px;
+    height:480px;
 
+  }
+  .nav_list a{
+    font-size: 20px;
+  }
+}
 /* media query = 900px */
 
 @media only screen and (max-width: 900px) {
@@ -958,6 +987,15 @@ pointer-events: auto;
     align-items: center;
     margin-left: 60%;
   }
+  .image img {
+    width: 150px;
+    height: 200px;
+
+  }
+  .nav-name img{
+    margin-left: -2rem;
+    }
+ 
 }
 
 @media only screen and (max-width: 540px) {
@@ -1048,4 +1086,18 @@ pointer-events: auto;
         margin-left:10px ;
         transition: all 0.3s ease-out;
       }
+      .image img {
+        width: 110px;
+        height: 150px;
+
+      }
+      .image {
+        animation: none ;
+      }
+      .bottom-footer{
+        font-size: 10px;
+      }
+      .nav-name img{
+        margin-left: -2rem;
+        }
 }

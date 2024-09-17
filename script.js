@@ -102,7 +102,7 @@ items[1].addEventListener("keyup", ()=>{
 
   }
 function checkEmail(){
-  const emailRegex =/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/ ;
+  const emailRegex = /^([a-zA-Z\d.-]+)@([a-zA-Z\d-]+)\.([a-zA-Z]{2,3})(\.[a-zA-Z]{2,3})?$/;
   const errorTextEmail =document.querySelector(".error-text.email")
 
 
