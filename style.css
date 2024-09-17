@@ -1088,8 +1088,8 @@ pointer-events: auto;
         transition: all 0.3s ease-out;
       }
       .image img {
-        width: 110px;
-        height: 150px;
+        width: 160px;
+        height: 200px;
 
       }
       .image {
